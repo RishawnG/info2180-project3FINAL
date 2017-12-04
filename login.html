@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CheapoMail Login</title>
+    <script type="text/javascript" src="validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+        <div class="login">
+            <form class="LoginInfo" action="login.php" onsubmit = "return validateLogin()" method="post">
+                <fieldset id="fieldset">
+                    <p><strong>Username</strong></p>
+                    <input id="username" type="text" name="username" required>
+                    <p><strong>Password</strong></p>
+                    <input type="password" name="password" required>
+                    <br><br>
+                    <input id='submit' type="Submit" name = "submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+</body>
+
+</html>
