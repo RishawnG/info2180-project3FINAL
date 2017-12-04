@@ -38,8 +38,13 @@ if (isset($_POST['submit'])){
             $statement->bindValue(':bodyy',$Body,PDO::PARAM_STR);
             $statement->bindValue(':dsent',$DATESENT,PDO::PARAM_STR);
             $statement->execute();
+            
+            //using session id, run a query to the messages table with session id as recipient id, and display
+            // using same for each loop, to receive messages, run a query and select all users from database with matching username
+            // run another query for getting all messages from table with this session id , and display to user
+            
         }
-    
+        
         
     }
     
